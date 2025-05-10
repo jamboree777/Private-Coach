@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음성 대화 분석기</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>음성 대화 분석기</h1>
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept=".wav,.mp3,.ogg,.m4a,audio/*">
+            <button id="analyzeBtn">분석하기</button>
+        </div>
+        <div class="result-section">
+            <div class="analysis-results">
+                <h2>분석 결과</h2>
+                <div id="speakerAnalysis">
+                    <h3>화자 분석</h3>
+                    <div id="speakerContent"></div>
+                </div>
+                <div id="emotionAnalysis">
+                    <h3>감정 분석</h3>
+                    <div id="emotionContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 
